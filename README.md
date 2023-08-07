@@ -8,7 +8,7 @@ These are the Fleet GitOps manifests for Rancher's AWS HowdyPartner demo.
 ## Automation
 ### Fleet: GitOps
 
-To demonstrate GitOps using the power of Fleet, check out the [gitops-fleet](gitops-fleet) directory. What is going on:
+To demonstrate GitOps using the power of Fleet, check out the [gitops-fleet](automation/gitops-fleet) directory. What is going on:
 
 * Deploys the same demo application across three clusters: dev, staging, prod.
 * Each deployment is tracking a different branch (dev, staging, prod) in the same Git repository.
