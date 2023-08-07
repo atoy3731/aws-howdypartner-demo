@@ -5,7 +5,7 @@ metadata:
   namespace: fleet-default
 spec:
   repo: https://github.com/atoy3731/aws-howdypartner-demo.git
-  branch: kube
+  branch: main
   targets:
   - clusterGroup: secured
   paths:
