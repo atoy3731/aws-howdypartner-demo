@@ -1,0 +1,12 @@
+defaultNamespace: kubewarden
+
+labels:
+  app: kubewarden-policies
+
+kustomize:
+  dir: ./resources
+
+dependsOn:
+  - selector:
+      matchLabels:
+        app: kubewarden-defaults

@@ -1,0 +1,15 @@
+defaultNamespace: kubewarden
+
+labels:
+  app: kubewarden-crds
+
+helm:
+  repo: https://charts.kubewarden.io
+  chart: kubewarden-crds
+  version: 1.2.3
+  releaseName: kubewarden-crds
+
+dependsOn:
+  - selector:
+      matchLabels:
+        app: cert-manager

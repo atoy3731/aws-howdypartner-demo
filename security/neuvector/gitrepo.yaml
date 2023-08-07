@@ -1,16 +1,13 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: demo-prod
+  name: neuvector
   namespace: fleet-default
 spec:
   repo: https://github.com/atoy3731/aws-howdypartner-demo.git
-  branch: prod
+  branch: main
   targets:
-  - name: prod
-    clusterSelector:
-      matchLabels:
-        env: prod
+  - clusterGroup: secured
   paths:
-  - ./gitops-fleet/backend/
-  - ./gitops-fleet/frontend/
+  - "./security/neuvector/crd"
+  - "./security/neuvector/core"

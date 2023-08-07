@@ -1,0 +1,14 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: stigatron
+  namespace: fleet-default
+spec:
+  repo: https://github.com/atoy3731/aws-howdypartner-demo.git
+  branch: main
+  targets:
+  - clusterGroup: carbide
+  paths:
+  - "./carbide/stigatron/cis/crd"
+  - "./carbide/stigatron/cis/operator"
+  - "./carbide/stigatron/stigatron"
