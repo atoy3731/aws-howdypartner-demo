@@ -1,0 +1,16 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: demo-staging
+  namespace: fleet-default
+spec:
+  repo: https://github.com/atoy3731/aws-howdypartner-demo.git
+  branch: staging
+  targets:
+  - name: staging
+    clusterSelector:
+      matchLabels:
+        env: staging
+  paths:
+  - ./gitops-fleet/backend/
+  - ./gitops-fleet/frontend/

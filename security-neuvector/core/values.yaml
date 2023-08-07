@@ -1,0 +1,14 @@
+global:
+  cattle:
+    url: https://rancher.kube.lol
+
+docker:
+  enabled: false
+k3s:
+  enabled: true
+controller:
+  ranchersso:
+    enabled: true
+
+crdwebhook:
+  enabled: false

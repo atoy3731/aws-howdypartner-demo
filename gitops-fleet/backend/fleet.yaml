@@ -1,0 +1,20 @@
+defaultNamespace: demo
+
+labels:
+  app: demo-backend
+
+helm:
+  chart: ./chart
+  values:
+    image:
+      tag: "2.0"
+
+targetCustomizations:
+- name: persistence
+  clusterSelector:
+    matchLabels:
+      persistence: enabled
+  helm:
+    values:         
+      persistence:
+        enabled: true
