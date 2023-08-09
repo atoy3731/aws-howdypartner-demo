@@ -41,8 +41,8 @@ Kubewarden is Rancher's policy enforcement offering, to give developer's full co
 
 ### STIGATRON: STIG Compliance Validation
 
-TODO
+Automate validating your entire fleet of RKE2 clusters against the DISA-certified STIG. 
 
 ### Airgapped Docs: Accessible Docs Anywhere
 
-TODO
+Access to all Rancher documentation in any environment, with or without internet connectivity.
