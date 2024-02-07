@@ -10,7 +10,7 @@ persistence:
 replicaCount: 3
 
 image:
-  repository: harbor.atoy.dev/public/demo-backend
+  repository: atoy3731/demo-backend
   pullPolicy: Always
   tag: "1.0"
 
