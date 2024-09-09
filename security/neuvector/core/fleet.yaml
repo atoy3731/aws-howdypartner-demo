@@ -11,6 +11,7 @@ helm:
   valuesFiles:
   - values.yaml
 
+dependsOn:
   - selector:
       matchLabels:
         app: neuvector-crd
