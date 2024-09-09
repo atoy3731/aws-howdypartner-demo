@@ -8,3 +8,4 @@ helm:
   chart: crd
   version: 2.7.8
   releaseName: neuvector-crd
+  takeOwnership: true
