@@ -1,8 +1,12 @@
 defaultNamespace: cattle-neuvector-system
 
 labels:
-  app: neuvector-crds
+  app: neuvector-crd
 
 helm:
-  chart: ./chart
-  releaseName: neuvector-crds
+  repo: https://neuvector.github.io/neuvector-helm/
+  chart: crd
+  version: 2.7.8
+  releaseName: neuvector-crd
+  valuesFiles:
+  - values.yaml

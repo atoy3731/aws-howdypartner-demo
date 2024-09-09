@@ -4,8 +4,8 @@ metadata:
   name: airgapped-docs
   namespace: fleet-default
 spec:
-  repo: https://github.com/atoy3731/fleet-security-demo.git
-  branch: kube
+  repo: https://github.com/atoy3731/aws-howdypartner-demo.git
+  branch: main
   targets:
   - clusterGroup: airgapped-docs
   paths:

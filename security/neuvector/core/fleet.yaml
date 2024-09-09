@@ -10,3 +10,7 @@ helm:
   releaseName: neuvector-core
   valuesFiles:
   - values.yaml
+
+  - selector:
+      matchLabels:
+        app: neuvector-crd
