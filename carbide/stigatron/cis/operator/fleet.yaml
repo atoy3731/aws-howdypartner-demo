@@ -2,6 +2,7 @@ defaultNamespace: cis-operator-system
 helm:
   repo: https://charts.rancher.io
   chart: rancher-cis-benchmark
+  version: 5.1.0
   releaseName: rancher-cis-benchmark
 
 dependsOn: 
