@@ -2,7 +2,7 @@ defaultNamespace: carbide-stigatron-system
 helm:
   repo: https://rancherfederal.github.io/carbide-charts/
   chart: stigatron
-  version: 0.3.0
+  version: 0.4.0
   releaseName: stigatron
 
 dependsOn: 
